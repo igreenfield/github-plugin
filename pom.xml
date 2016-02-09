@@ -9,11 +9,11 @@
     </parent>
 
     <groupId>com.coravy.hudson.plugins.github</groupId>
-    <artifactId>github</artifactId>
+    <artifactId>cisco-github</artifactId>
     <version>1.17.1-SNAPSHOT</version>
     <packaging>hpi</packaging>
 
-    <name>GitHub plugin</name>
+    <name>Cisco GitHub plugin</name>
     <url>http://wiki.jenkins-ci.org/display/JENKINS/Github+Plugin</url>
     <licenses>
         <license>

@@ -23,7 +23,7 @@ public final class GithubLinkAction implements Action {
 
     @Override
     public String getDisplayName() {
-        return "GitHub";
+        return "Cisco-GitHub";
     }
 
     @Override

@@ -2,13 +2,17 @@ package com.cloudbees.jenkins.GitHubPushTrigger
 
 import com.cloudbees.jenkins.GitHubPushTrigger
 
+def f = namespace(lib.FormTagLib);
+
 tr {
     td(colspan: 4) {
-        div(id: 'gh-hooks-warn')
+        f.entry(title: _("Ignorable Pusher"), field: "ignorablePusher") {
+            f.textbox()
+        }
     }
 }
 
-script(src:"${rootURL}${h.getResourcePath()}/plugin/github/js/warning.js")
+script(src: "${rootURL}${h.getResourcePath()}/plugin/github/js/warning.js")
 script {
     text("""
 InlineWarning.setup({ 
